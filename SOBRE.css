@@ -1,0 +1,18 @@
+body/*tela completa*/{
+    background-color: rgb(189, 127, 99);
+}
+
+header/*cabecalho*/{
+    background: linear-gradient(to right, #b9429c, #d31f88,rgb(219, 0, 84)); /* Degradê de laranja para rosa */
+    display: flex;/*img do lado da ft*/
+
+}
+#titulo/*titulo do cabeçalho*/ {
+    font-size:2.5em;
+    color: #4d0180; 
+    margin: 0;
+    font-family: 'Calisto MT', sans-serif;
+}
+header img /*img do cabecalho*/{
+
+    max-width: 20%; /* nn passa da largura do header*/}
