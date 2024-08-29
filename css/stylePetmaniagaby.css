@@ -1,0 +1,44 @@
+/* Estiliza a tela completa */
+body {
+    background-color: rgb(207, 96, 139);
+}
+
+/* Estiliza o cabeçalho */
+header {
+    background: linear-gradient(to right, #b9429c, #d31f88, rgb(219, 0, 84)); /* Degradê de roxo para rosa */
+    display: flex; /* Exibe o título e a imagem lado a lado */
+    align-items: center; /* Alinha o título e a imagem verticalmente */
+    padding: 10px; /* Adiciona espaçamento interno no cabeçalho */
+}
+
+/* Estiliza o título do cabeçalho */
+#titulo {
+    font-size: 2.5em;
+    color: #4d0180; 
+    margin: 0;
+    font-family: 'Calisto MT', sans-serif;
+}
+
+/* Estiliza a imagem do cabeçalho */
+header img {
+    max-width: 13%; /* Limita a largura da imagem para não ultrapassar o cabeçalho */
+    height: auto;
+    margin-left: 20px; /* Adiciona um espaço entre o título e a imagem */
+}
+
+/* Estiliza os botões */
+button {
+    padding: 10px;
+    background-color: rgb(201, 21, 51);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(179, 19, 46); /* Cor mais escura ao passar o mouse */
+}
