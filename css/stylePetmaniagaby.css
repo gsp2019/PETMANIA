@@ -26,6 +26,12 @@ header img {
     margin-left: 20px; /* Adiciona um espaço entre o título e a imagem */
 }
 
+ *iconecarrinho{
+    max-width: 13%; /* Limita a largura da imagem para não ultrapassar o cabeçalho */
+    height: auto;
+    margin-left: 20px;
+}
+
 /* Estiliza os botões */
 button {
     padding: 10px;

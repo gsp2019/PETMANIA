@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetMania - Produtos</title>
+    <link rel="stylesheet" href="css/PRODUTOS.css">
+    <!-- Inclua o Font Awesome para ícones, se necessário -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <h1>PetMania</h1>
+        <a href="file:///C:/Users/aluno/Downloads/petmaniagaby/PETMANIA/Petmaniagaby.html">
+            <img id="patalogo" src="img/foto do header.png" alt="logo">
+        </a>
+        <!-- Ícone de carinho para a tela de checkout -->
+        <a href="checkout.html" class="icon">
+            <i class="fa-solid fa-heart"></i>
+        </a>
+    </header>
+
+    <div class="container">
+        <h2>Resumo do Pedido</h2>
+        <div class="order-summary">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço Unitário</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ração para Cães</td>
+                        <td>2</td>
+                        <td>R$ 50,00</td>
+                        <td>R$ 100,00</td>
+                    </tr>
+                    <tr>
+                        <td>Brinquedo para Gatos</td>
+                        <td>1</td>
+                        <td>R$ 25,00</td>
+                        <td>R$ 25,00</td>
+                    </tr>
+                    <!-- Adicione mais produtos conforme necessário -->
+                    <tr>
+                        <td colspan="3" style="text-align: right;"><strong>Total:</strong></td>
+                        <td><strong>R$ 125,00</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Informações de Envio</h2>
+        <form class="checkout-form">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Endereço:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="city">Cidade:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+                <label for="state">Estado:</label>
+                <select id="state" name="state" required>
+                    <option value="">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <!-- Adicione outros estados conforme necessário -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="zip">CEP:</label>
+                <input type="text" id="zip" name="zip" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefone:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+
+            <h2>Informações de Pagamento</h2>
+            <div class="form-group">
+                <label for="card-number">Número do Cartão:</label>
+                <input type="text" id="card-number" name="card-number" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Data de Validade:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Finalizar Compra</button>
+        </form>
+    </div>
+</body>
+</html>
