@@ -16,6 +16,8 @@
     <a href="checkout.html" class="icon">
     <img id= "iconecarrinho" src = "img/carrinhoicone.webp" alt = "icone">
     </a>
+    <button id="mode-tema">mudanca para Dark Mode</button>
+
 </header> 
 <body>
     <img id="carrossel" src="img/carrossel.webp"  width="2000" height="500" ></body></html></center>
@@ -33,6 +35,21 @@
 <footer></footer>
     <p>&copy; 2024 PetMania. Todos os direitos reservados.</p>
 </footer>
+
+<script>
+    document.querySelector('#mode-tema').addEventListener('click', () => {
+      const body = document.querySelector('body');
+      const button = document.querySelector('#mode-tema');
+      
+      body.classList.toggle('dark-mode');
+      
+      if (body.classList.contains('dark-mode')) {
+        button.textContent = 'Para o Light Mode';
+      } else {
+        button.textContent = 'Para o Dark Mode';
+      }
+    });
+  </script>
 </body>
 
 
