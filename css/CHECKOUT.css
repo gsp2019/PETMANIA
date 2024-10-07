@@ -1,88 +1,65 @@
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: relative;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-        #patalogo {
-            width: 100px; /* Ajuste o tamanho do logo conforme necessário */
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .order-summary table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        .order-summary th, .order-summary td {
-            padding: 10px;
-            border: 1px solid #ddd;
-            text-align: left;
-        }
-        .order-summary th {
-            background-color: #f4f4f4;
-        }
-        .checkout-form .form-group {
-            margin-bottom: 15px;
-        }
-        .checkout-form .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .checkout-form .form-group input,
-        .checkout-form .form-group select {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-        }
-        .checkout-form .form-group textarea {
-            height: 100px;
-        }
-        .btn-submit {
-            background-color: #5cb85c;
-            border: none;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            width: 100%;
-        }
-        .btn-submit:hover {
-            background-color: #4cae4c;
-        }
-        .icon {
-            position: absolute;
-            right: 10px;
-            top: 10px;
-            font-size: 24px;
-            color: #fff;
-            text-decoration: none;
-        }
-        .icon:hover {
-            color: #f4f4f4;
-        }
+/* Estiliza a tela completa */
+body {
+    background-color: rgb(207, 96, 139);
+}
+
+/* Estiliza o cabeçalho */
+header {
+    background: linear-gradient(to right, #b9429c, #d31f88, rgb(219, 0, 84)); /* Degradê de roxo para rosa */
+    display: flex; /* Exibe o título e a imagem lado a lado */
+    align-items: center; /* Alinha o título e a imagem verticalmente */
+    padding: 10px; /* Adiciona espaçamento interno no cabeçalho */
+}
+
+/* Estiliza o título do cabeçalho */
+#titulo {
+    font-size: 2.5em;
+    color: #4d0180; 
+    margin: 0;
+    font-family: 'Calisto MT', sans-serif;
+}
+
+/* Estiliza a imagem do cabeçalho */
+header img {
+    max-width: 13%; /* Limita a largura da imagem para não ultrapassar o cabeçalho */
+    height: auto;
+    margin-left: 20px; /* Adiciona um espaço entre o título e a imagem */
+}
+
+ *iconecarrinho{
+    max-width: 13%; /* Limita a largura da imagem para não ultrapassar o cabeçalho */
+    height: auto;
+    margin-left: 20px;
+}
+
+/* Estiliza os botões */
+button {
+    padding: 10px;
+    background-color: rgb(201, 21, 51);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(179, 19, 46); /* Cor mais escura ao passar o mouse */
+}
+
+button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Dark Mode Styles */
+  body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+
+  button.dark-mode {
+    background-color: #555;
+    color: #f0f0f0;
+  }
